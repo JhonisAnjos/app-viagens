@@ -4,8 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.springframework.hateoas.RepresentationModel;
+
 @Entity
-public class Hotel {
+public class Hotel extends RepresentationModel<Hotel>  {
 	
 	@Id
 	@GeneratedValue
