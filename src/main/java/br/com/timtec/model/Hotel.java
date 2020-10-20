@@ -3,6 +3,7 @@ package br.com.timtec.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Version;
 
 import org.springframework.hateoas.RepresentationModel;
 
@@ -18,6 +19,7 @@ public class Hotel extends RepresentationModel<Hotel>  {
 	private String endereco;
 	
 	private String cidade;
+	
 
 	public Integer getId() {
 		return id;
@@ -50,5 +52,6 @@ public class Hotel extends RepresentationModel<Hotel>  {
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
+
 	
 }
